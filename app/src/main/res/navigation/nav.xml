@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav"
+    app:startDestination="@id/listFragmend">
+
+    <fragment
+        android:id="@+id/listFragmend"
+        android:name="com.pm.findme.ListFragmend"
+        android:label="List Company"
+        tools:layout="@layout/fragment_list_fragmend" >
+        <action
+            android:id="@+id/action_listFragmend_to_addFragment"
+            app:destination="@id/addFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addFragment"
+        android:name="com.pm.findme.AddFragment"
+        android:label="Add Company"
+        tools:layout="@layout/fragment_add" >
+        <action
+            android:id="@+id/action_addFragment_to_listFragmend"
+            app:destination="@id/listFragmend" />
+    </fragment>
+</navigation>
