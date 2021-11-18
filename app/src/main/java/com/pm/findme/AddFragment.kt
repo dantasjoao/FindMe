@@ -8,8 +8,8 @@ import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
-import com.pm.findme.data.entities.Company
-import com.pm.findme.data.viewmodel.CompanyViewModel
+import com.pm.findme.model.Company
+import com.pm.findme.viewmodel.CompanyViewModel
 import kotlinx.android.synthetic.main.fragment_add.*
 import kotlinx.android.synthetic.main.fragment_add.view.*
 

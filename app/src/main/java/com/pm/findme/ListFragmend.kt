@@ -7,12 +7,10 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
-import androidx.navigation.fragment.NavHostFragment.findNavController
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.pm.findme.data.viewmodel.CompanyViewModel
+import com.pm.findme.viewmodel.CompanyViewModel
 import kotlinx.android.synthetic.main.fragment_list_fragmend.view.*
-import android.widget.ListAdapter as ListAdapter
 
 class ListFragmend : Fragment() {
 

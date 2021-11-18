@@ -1,12 +1,12 @@
-package com.pm.findme.data.viewmodel
+package com.pm.findme.viewmodel
 
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.viewModelScope
 import com.pm.findme.data.database.CompanyDatabase
-import com.pm.findme.data.entities.Company
-import com.pm.findme.data.repository.CompanyRepository
+import com.pm.findme.model.Company
+import com.pm.findme.repository.CompanyRepository
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 

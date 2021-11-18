@@ -1,9 +1,9 @@
-package com.pm.findme.data.repository
+package com.pm.findme.repository
 
 
 import androidx.lifecycle.LiveData
 import com.pm.findme.data.dao.CompanyDao
-import com.pm.findme.data.entities.Company
+import com.pm.findme.model.Company
 
 class CompanyRepository(private  val companyDao: CompanyDao) {
     val readAllProducts : LiveData<List<Company>> = companyDao.readAllProducts()

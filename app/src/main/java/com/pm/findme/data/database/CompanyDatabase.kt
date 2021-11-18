@@ -5,7 +5,7 @@ import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
 import com.pm.findme.data.dao.CompanyDao
-import com.pm.findme.data.entities.Company
+import com.pm.findme.model.Company
 
 @Database(entities = [Company :: class], version = 1, exportSchema = false)
 abstract class CompanyDatabase : RoomDatabase() {

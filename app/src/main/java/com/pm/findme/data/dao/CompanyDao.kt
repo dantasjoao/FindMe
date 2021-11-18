@@ -2,7 +2,7 @@ package com.pm.findme.data.dao
 
 import androidx.lifecycle.LiveData
 import androidx.room.*
-import com.pm.findme.data.entities.Company
+import com.pm.findme.model.Company
 
 @Dao
 interface CompanyDao {
