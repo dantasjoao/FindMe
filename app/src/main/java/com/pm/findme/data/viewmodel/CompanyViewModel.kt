@@ -11,7 +11,7 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
 class CompanyViewModel(application: Application) : AndroidViewModel(application){
-    private val readAllProducts: LiveData<List<Company>>
+    val readAllProducts: LiveData<List<Company>>
     private val repository: CompanyRepository
 
     init {

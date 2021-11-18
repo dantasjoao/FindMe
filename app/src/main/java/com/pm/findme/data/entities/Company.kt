@@ -12,7 +12,7 @@ class Company(
     val companyEmail: String,
     val companyPhone: Int,
     val companyAddress: String,
-    val companyCategory: String
+    val companyCategory: String,
 
 
 

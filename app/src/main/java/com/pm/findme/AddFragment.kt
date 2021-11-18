@@ -42,9 +42,9 @@ class AddFragment : Fragment() {
         val address = companyAddress.text.toString()
         val category = companyCategory.text.toString()
 
-        if(inputCheck(name,email, phone, address, category)){
+        if(inputCheck(name, email, phone, address, category)){
             // Create Company object
-            val product = Company(0, name, email, Integer.parseInt(phone.toString()), address, category)
+            val product = Company(0, name, email, Integer.parseInt(phone.toString()), address, category, )
             // Add Data to Database
             mUserViewModel.addProduct(product)
             Toast.makeText(requireContext(), "Successfully added", Toast.LENGTH_LONG).show()
