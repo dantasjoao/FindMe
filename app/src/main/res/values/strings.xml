@@ -3,4 +3,26 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
     <string name="company">Company</string>
+    <string name="updated">Successfully Updated!</string>
+    <string name="fields">Please fill out all fields!</string>
+    <string name="y">Yes</string>
+    <string name="n">No</string>
+    <string name="added">Successfully added!</string>
+    <string name="fields_1">Please fill out all fields!</string>
+    <string name="list_company">List Company</string>
+    <string name="add_company">Add Company</string>
+    <string name="update">Update</string>
+    <string name="name_2">Name of Company</string>
+    <string name="email_2">Email of Company</string>
+    <string name="phone_2">Phone of Company</string>
+    <string name="address_2">Address of Company</string>
+    <string name="category_2">Category of Company</string>
+    <string name="update_2">Update</string>
+    <string name="name_1">Name of Company</string>
+    <string name="email_1">Email of Company</string>
+    <string name="phone_1">Phone of Company</string>
+    <string name="address_1">Address of Company</string>
+    <string name="category_1">Category of Company</string>
+    <string name="add">Add</string>
+
 </resources>

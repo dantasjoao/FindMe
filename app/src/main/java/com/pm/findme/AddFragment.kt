@@ -47,11 +47,11 @@ class AddFragment : Fragment() {
             val product = Company(0, name, email, Integer.parseInt(phone.toString()), address, category, )
             // Add Data to Database
             mUserViewModel.addProduct(product)
-            Toast.makeText(requireContext(), "Successfully added", Toast.LENGTH_LONG).show()
+            Toast.makeText(requireContext(), getString(R.string.added), Toast.LENGTH_LONG).show()
             //Navigate Back
             findNavController().navigate(R.id.action_addFragment_to_listFragmend)
         }else{
-            Toast.makeText(requireContext(),"Please fill out all fields", Toast.LENGTH_LONG).show()
+            Toast.makeText(requireContext(),getString(R.string.fields_1), Toast.LENGTH_LONG).show()
         }
     }
 

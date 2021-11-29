@@ -37,4 +37,6 @@ class CompanyViewModel(application: Application) : AndroidViewModel(application)
             repository.deleteProduct(product)
         }
     }
+
+
 }

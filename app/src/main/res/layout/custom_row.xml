@@ -10,10 +10,10 @@
     <TextView
         android:id="@+id/id_txt"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="22dp"
         android:layout_marginBottom="280dp"
         android:text="1"
-        android:textSize="25sp"
+        android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -22,8 +22,8 @@
 
     <TextView
         android:id="@+id/companyName_txt"
-        android:layout_width="339dp"
-        android:layout_height="35dp"
+        android:layout_width="320dp"
+        android:layout_height="22dp"
         android:layout_marginStart="10dp"
         android:text="Pichelaria Leitão"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
@@ -32,16 +32,16 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/id_txt"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.025"
+        app:layout_constraintVertical_bias="0.0"
         tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/companyEmail_txt"
         android:layout_width="278dp"
         android:layout_height="20dp"
-        android:layout_marginStart="100dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="10dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="50dp"
         android:ems="10"
         android:inputType="textEmailAddress"
         android:text="dantasjoao@ipvc.pt"
@@ -55,9 +55,9 @@
         android:id="@+id/companyPhone_txt"
         android:layout_width="278dp"
         android:layout_height="20dp"
-        android:layout_marginStart="100dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="10dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="50dp"
         android:ems="10"
         android:inputType="phone"
         android:text="914941845"
@@ -71,9 +71,9 @@
         android:id="@+id/companyCategory_txt"
         android:layout_width="278dp"
         android:layout_height="20dp"
-        android:layout_marginStart="100dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="10dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="50dp"
         android:text="Eletricista"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         app:layout_constraintEnd_toEndOf="parent"
@@ -85,9 +85,9 @@
         android:id="@+id/companyAddress_txt"
         android:layout_width="278dp"
         android:layout_height="20dp"
-        android:layout_marginStart="100dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="10dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="50dp"
         android:ems="10"
         android:inputType="textPostalAddress"
         android:text="Rua dos Trigais, Vila Verde, Braga, Portugal"
@@ -98,5 +98,5 @@
         tools:ignore="MissingConstraints" />
 
 
-
 </androidx.constraintlayout.widget.ConstraintLayout>
+

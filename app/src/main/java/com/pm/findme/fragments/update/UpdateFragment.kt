@@ -1,12 +1,11 @@
 package com.pm.findme.fragments.update
 
+import android.app.AlertDialog
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextUtils
+import android.view.*
 import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
 import android.widget.Toast
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
@@ -41,6 +40,8 @@ class UpdateFragment : Fragment() {
         view.update_add_btn.setOnClickListener {
             updateItem()
         }
+        // Add menu
+        setHasOptionsMenu(true)
 
         return view
     }
@@ -58,11 +59,11 @@ class UpdateFragment : Fragment() {
             val updateUser = Company(args.currentCompany.id, companyName, companyEmail, companyPhone, companyAddress, companyCategory)
             // Update Current Company
             mUserViewModel.updateProduct(updateUser)
-            Toast.makeText(requireContext(), "Updated Successfully!", Toast.LENGTH_SHORT).show()
+            Toast.makeText(requireContext(),getString(R.string.updated), Toast.LENGTH_SHORT).show()
             //Navigate back
             findNavController().navigate(R.id.action_updateFragment_to_listFragmend)
         }else{
-            Toast.makeText(requireContext(), "Please fill out all fields!", Toast.LENGTH_SHORT).show()
+            Toast.makeText(requireContext(), getString(R.string.fields), Toast.LENGTH_SHORT).show()
         }
 
     }
@@ -71,5 +72,30 @@ class UpdateFragment : Fragment() {
         return !(TextUtils.isEmpty(name) && TextUtils.isEmpty(email) && phone.isEmpty() && TextUtils.isEmpty(address) && TextUtils.isEmpty(category))
     }
 
+    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
+        inflater.inflate(R.menu.menu_delete_company, menu)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        if(item.itemId == R.id.menu_delete_company){
+            deleteProduct()
+        }
+        return super.onOptionsItemSelected(item)
+    }
+
+    private fun deleteProduct(){
+        val builder = AlertDialog.Builder(requireContext())
+        builder.setPositiveButton(getString(R.string.y)) { _, _ ->
+            mUserViewModel.deleteProduct(args.currentCompany)
+            Toast.makeText(
+                requireContext(),
+                 "Successfully removed: ${args.currentCompany.companyName}",
+                Toast.LENGTH_SHORT).show()
+        }
+        builder.setNegativeButton(getString(R.string.n)){ _, _ -> }
+        builder.setTitle("Delete  ${args.currentCompany.companyName}?")
+        builder.setMessage("Are you sure you want to delete ${args.currentCompany.companyName}?")
+        builder.create().show()
+    }
 }
 

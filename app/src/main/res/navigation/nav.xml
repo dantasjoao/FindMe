@@ -8,7 +8,7 @@
     <fragment
         android:id="@+id/listFragmend"
         android:name="com.pm.findme.ListFragmend"
-        android:label="List Company"
+        android:label="@string/list_company"
         tools:layout="@layout/fragment_list_fragmend" >
         <action
             android:id="@+id/action_listFragmend_to_addFragment"
@@ -20,7 +20,7 @@
     <fragment
         android:id="@+id/addFragment"
         android:name="com.pm.findme.AddFragment"
-        android:label="Add Company"
+        android:label="@string/add_company"
         tools:layout="@layout/fragment_add" >
         <action
             android:id="@+id/action_addFragment_to_listFragmend"
@@ -29,7 +29,7 @@
     <fragment
         android:id="@+id/updateFragment"
         android:name="com.pm.findme.fragments.update.UpdateFragment"
-        android:label="Update"
+        android:label="@string/update"
         tools:layout="@layout/fragment_update" >
         <action
             android:id="@+id/action_updateFragment_to_listFragmend"
