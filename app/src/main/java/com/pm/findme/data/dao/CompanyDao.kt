@@ -19,4 +19,5 @@ interface CompanyDao {
     @Delete
     fun deleteProduct(product: Company)
 
+
 }
